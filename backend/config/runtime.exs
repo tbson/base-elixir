@@ -113,3 +113,18 @@ if config_env() == :prod do
   #
   # See https://hexdocs.pm/swoosh/Swoosh.html#module-installation for details.
 end
+
+# Custom config
+config :app, :custom,
+  ENV: config_env(),
+  APP_NAME: System.get_env("APP_NAME"),
+  DOMAIN: System.get_env("DOMAIN"),
+  BASE_URL: "https://" <> System.get_env("DOMAIN"),
+  PAGINATOR_LIMIT: 15,
+  # 15 mins - unit: second
+  TOKEN_LIFESPAN: 15 * 60,
+  # 7 days
+  REFRESH_TOKEN_LIFESPAN: 60 * 60 * 24 * 7,
+  EMAIL_DEFAULT_FROM: System.get_env("EMAIL_DEFAULT_FROM"),
+  TMP_PWD: System.get_env("TMP_PWD"),
+  RABBITMQ_URL: System.get_env("RABBITMQ_URL")
