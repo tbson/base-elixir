@@ -1,0 +1,1091 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Plural-Forms: nplurals = 2; plural = (n != 1);\n"
+"Language: en\n"
+"mime-version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/component/auth/login/index.jsx:59
+msgid "Forgot password"
+msgstr ""
+
+#: src/component/auth/login/form.jsx:20
+msgid "Username"
+msgstr ""
+
+#: src/component/account/admin/config.js:33
+#: src/component/account/staff/config.js:33
+#: src/component/auth/login/form.jsx:25
+#: src/component/org/company/config.js:70
+msgid "Password"
+msgstr ""
+
+#: src/component/auth/login/form.jsx:55
+#: src/component/auth/login/index.jsx:52
+msgid "Login"
+msgstr ""
+
+#: src/component/common/layout/main/index.jsx:58
+#: src/component/common/layout/work/index.jsx:116
+msgid "Profile"
+msgstr ""
+
+#: src/component/common/layout/main/index.jsx:62
+msgid "Config"
+msgstr ""
+
+#: src/component/common/layout/main/index.jsx:88
+#: src/component/common/layout/main/index.jsx:128
+#: src/component/common/layout/work/index.jsx:67
+#: src/component/org/assigning_company/config.js:23
+#: src/component/org/company/config.js:30
+#: src/component/org/employee/config.js:26
+msgid "Company"
+msgstr ""
+
+#: src/component/account/staff/config.js:21
+#: src/component/common/layout/main/index.jsx:82
+#: src/component/org/assigning_company/config.js:24
+#: src/component/org/company/config.js:63
+msgid "Staff"
+msgstr ""
+
+#: src/component/role/group/config.js:14
+msgid "Group"
+msgstr ""
+
+#: src/component/account/admin/profile/index.jsx:36
+#: src/component/account/assistant/profile/index.jsx:36
+#: src/component/account/director/profile/index.jsx:36
+#: src/component/account/employee/profile/index.jsx:34
+#: src/component/account/staff/profile/index.jsx:36
+#: src/component/account/staff_bak/profile/index.jsx:36
+#: src/component/account/vendor/profile/index.jsx:36
+msgid "Fullname"
+msgstr ""
+
+#: src/component/account/admin/config.js:31
+#: src/component/account/admin/profile/index.jsx:41
+#: src/component/account/assistant/profile/index.jsx:41
+#: src/component/account/director/profile/index.jsx:41
+#: src/component/account/employee/crud/config.js:38
+#: src/component/account/employee/profile/index.jsx:39
+#: src/component/account/staff/config.js:31
+#: src/component/account/staff/profile/index.jsx:41
+#: src/component/account/staff_bak/profile/index.jsx:41
+#: src/component/account/vendor/profile/index.jsx:41
+#: src/component/auth/reset_pwd/form.jsx:26
+#: src/component/document/insurance_record/config.js:28
+#: src/component/document/salary_policy/config.js:28
+#: src/component/document/salary_record/config.js:28
+#: src/component/document/tax_record/config.js:28
+#: src/component/org/company/config.js:68
+#: src/component/org/company/detail.jsx:221
+#: src/component/org/company/detail.jsx:270
+#: src/component/org/employee/config.js:33
+msgid "Email"
+msgstr ""
+
+#: src/component/account/admin/profile/index.jsx:46
+#: src/component/account/assistant/profile/index.jsx:46
+#: src/component/account/director/profile/index.jsx:46
+#: src/component/account/employee/profile/index.jsx:44
+#: src/component/account/staff/profile/index.jsx:46
+#: src/component/account/staff_bak/profile/index.jsx:46
+#: src/component/account/vendor/profile/index.jsx:46
+#: src/component/document/insurance_record/config.js:29
+#: src/component/document/salary_policy/config.js:29
+#: src/component/document/salary_record/config.js:29
+#: src/component/document/tax_record/config.js:29
+#: src/component/org/employee/config.js:32
+msgid "Phone number"
+msgstr ""
+
+#: src/component/account/employee/crud/config.js:41
+msgid "Groups"
+msgstr ""
+
+#: src/component/account/admin/profile/index.jsx:60
+#: src/component/account/admin/profile/update/index.jsx:42
+#: src/component/account/assistant/profile/index.jsx:60
+#: src/component/account/assistant/profile/update/index.jsx:42
+#: src/component/account/director/profile/index.jsx:60
+#: src/component/account/director/profile/update/index.jsx:42
+#: src/component/account/staff/profile/index.jsx:60
+#: src/component/account/staff/profile/update/index.jsx:42
+#: src/component/account/staff_bak/profile/index.jsx:70
+#: src/component/account/staff_bak/profile/update/index.jsx:42
+#: src/component/account/vendor/profile/index.jsx:70
+#: src/component/account/vendor/profile/update/index.jsx:42
+msgid "Update profile"
+msgstr ""
+
+#: src/component/auth/change_pwd/index.jsx:39
+#: src/component/auth/change_pwd/index.jsx:42
+msgid "Change password"
+msgstr ""
+
+#: src/component/auth/reset_pwd/index.jsx:51
+#: src/component/auth/reset_pwd/index.jsx:53
+msgid "Reset password"
+msgstr ""
+
+#: src/component/account/admin/dialog/index.jsx:66
+#: src/component/account/admin/profile/update/index.jsx:44
+#: src/component/account/assistant/profile/update/index.jsx:44
+#: src/component/account/director/profile/update/index.jsx:44
+#: src/component/account/employee/crud/dialog/index.jsx:68
+#: src/component/account/staff/dialog/index.jsx:66
+#: src/component/account/staff/profile/update/index.jsx:44
+#: src/component/account/staff_bak/profile/update/index.jsx:44
+#: src/component/account/vendor/profile/update/index.jsx:44
+#: src/component/auth/change_pwd/index.jsx:41
+#: src/component/auth/reset_pwd/index.jsx:52
+#: src/component/config/variable/dialog/index.jsx:65
+#: src/component/document/insurance_record/dialog/index.jsx:68
+#: src/component/document/salary_policy/dialog/index.jsx:68
+#: src/component/document/salary_record/dialog/index.jsx:68
+#: src/component/document/tax_record/dialog/index.jsx:68
+#: src/component/org/assigning_company/dialog/index.jsx:65
+#: src/component/org/company/assign_dialog/index.jsx:53
+#: src/component/org/company/assistant_dialog/index.jsx:63
+#: src/component/org/company/dialog/index.jsx:65
+#: src/component/org/company/director_dialog/index.jsx:63
+#: src/component/org/employee/dialog/index.jsx:68
+#: src/component/org/position/dialog/index.jsx:65
+#: src/component/role/group/dialog/index.jsx:65
+#: src/component/support/meeting/dialog/index.jsx:65
+msgid "Cancel"
+msgstr ""
+
+#: src/component/auth/change_pwd/form.jsx:20
+msgid "Old password"
+msgstr ""
+
+#: src/component/auth/change_pwd/form.jsx:25
+msgid "New password"
+msgstr ""
+
+#: src/component/auth/change_pwd/form.jsx:30
+msgid "Confirm new password"
+msgstr ""
+
+#: src/util/dialog_util.js:12
+msgid "Add new"
+msgstr ""
+
+#: src/component/account/admin/dialog/index.jsx:64
+#: src/component/account/employee/crud/dialog/index.jsx:66
+#: src/component/account/staff/dialog/index.jsx:64
+#: src/component/config/variable/dialog/index.jsx:63
+#: src/component/document/insurance_record/dialog/index.jsx:66
+#: src/component/document/salary_policy/dialog/index.jsx:66
+#: src/component/document/salary_record/dialog/index.jsx:66
+#: src/component/document/tax_record/dialog/index.jsx:66
+#: src/component/org/assigning_company/dialog/index.jsx:63
+#: src/component/org/company/assign_dialog/index.jsx:51
+#: src/component/org/company/assistant_dialog/index.jsx:61
+#: src/component/org/company/dialog/index.jsx:63
+#: src/component/org/company/director_dialog/index.jsx:61
+#: src/component/org/employee/dialog/index.jsx:66
+#: src/component/org/position/dialog/index.jsx:63
+#: src/component/role/group/dialog/index.jsx:63
+#: src/component/support/meeting/dialog/index.jsx:63
+msgid "Save"
+msgstr ""
+
+#: src/component/common/table/button.jsx:38
+#: src/util/dialog_util.js:12
+msgid "Update"
+msgstr ""
+
+#: src/component/account/admin/config.js:25
+#: src/component/account/employee/crud/config.js:31
+#: src/component/account/staff/config.js:25
+#: src/component/config/variable/config.js:18
+#: src/component/document/insurance_record/config.js:20
+#: src/component/document/salary_policy/config.js:20
+#: src/component/document/salary_record/config.js:20
+#: src/component/document/tax_record/config.js:20
+#: src/component/org/assigning_company/config.js:18
+#: src/component/org/company/config.js:34
+#: src/component/org/employee/config.js:20
+#: src/component/org/position/config.js:20
+#: src/component/role/group/config.js:18
+#: src/component/support/meeting/config.js:19
+#, javascript-format
+msgid "Do you want to remote this ${ name }?"
+msgstr ""
+
+#: src/component/account/admin/config.js:26
+#: src/component/account/employee/crud/config.js:32
+#: src/component/account/staff/config.js:26
+#: src/component/config/variable/config.js:19
+#: src/component/document/insurance_record/config.js:21
+#: src/component/document/salary_policy/config.js:21
+#: src/component/document/salary_record/config.js:21
+#: src/component/document/tax_record/config.js:21
+#: src/component/org/assigning_company/config.js:19
+#: src/component/org/company/config.js:35
+#: src/component/org/employee/config.js:21
+#: src/component/org/position/config.js:21
+#: src/component/role/group/config.js:19
+#: src/component/support/meeting/config.js:20
+msgid "Do you want to remote these ${ name }?"
+msgstr ""
+
+#: src/component/role/group/config.js:23
+msgid "Group name"
+msgstr ""
+
+#: src/component/role/group/config.js:24
+msgid "Permissions"
+msgstr ""
+
+#: src/component/common/table/search_input.jsx:25
+msgid "Search"
+msgstr ""
+
+#: src/component/common/table/button.jsx:54
+msgid "Remove"
+msgstr ""
+
+#: src/util/form_util.js:82
+msgid "The input is not valid E-mail"
+msgstr ""
+
+#: src/component/common/layout/main/index.jsx:134
+#: src/component/common/layout/work/index.jsx:74
+#: src/component/org/employee/config.js:27
+#: src/component/org/position/config.js:16
+msgid "Position"
+msgstr ""
+
+#: src/component/org/position/preview.jsx:42
+msgid "UID"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:30
+#: src/component/document/salary_policy/config.js:30
+#: src/component/document/salary_record/config.js:30
+#: src/component/document/tax_record/config.js:30
+#: src/component/org/position/preview.jsx:48
+msgid "Title"
+msgstr ""
+
+#: src/component/org/position/config.js:28
+msgid "Is department"
+msgstr ""
+
+#: src/component/org/position/config.js:29
+msgid "Is head"
+msgstr ""
+
+#: src/component/org/position/config.js:30
+msgid "Order"
+msgstr ""
+
+#: src/component/document/salary_policy/table.jsx:324
+#: src/component/document/salary_record/index.jsx:70
+#: src/component/org/employee/table.jsx:247
+#: src/component/org/position/table.jsx:103
+msgid "Sample file"
+msgstr ""
+
+#: src/component/account/employee/config.js:14
+#: src/component/account/employee/crud/config.js:27
+#: src/component/common/layout/main/index.jsx:141
+#: src/component/common/layout/work/index.jsx:81
+#: src/component/document/insurance_record/config.js:25
+#: src/component/document/salary_policy/config.js:25
+#: src/component/document/salary_record/config.js:25
+#: src/component/document/tax_record/config.js:25
+#: src/component/org/employee/config.js:16
+msgid "Employee"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:26
+#: src/component/document/salary_policy/config.js:26
+#: src/component/document/salary_record/config.js:26
+#: src/component/document/tax_record/config.js:26
+#: src/component/org/employee/config.js:25
+msgid "Employee code"
+msgstr ""
+
+#: src/component/org/employee/config.js:28
+msgid "Title level"
+msgstr ""
+
+#: src/component/org/employee/config.js:29
+msgid "First name"
+msgstr ""
+
+#: src/component/org/employee/config.js:30
+msgid "Last name"
+msgstr ""
+
+#: src/component/org/employee/config.js:34
+msgid "Change department doc number"
+msgstr ""
+
+#: src/component/org/employee/config.js:35
+msgid "Change department doc start date"
+msgstr ""
+
+#: src/component/org/employee/config.js:36
+msgid "Change department doc expiry date"
+msgstr ""
+
+#: src/component/org/employee/config.js:37
+msgid "Change title doc number"
+msgstr ""
+
+#: src/component/org/employee/config.js:38
+msgid "Change title doc start date"
+msgstr ""
+
+#: src/component/org/employee/config.js:39
+msgid "Change title doc expiry date"
+msgstr ""
+
+#: src/component/org/employee/config.js:40
+msgid "Contract type"
+msgstr ""
+
+#: src/component/org/employee/config.js:41
+msgid "Contract number"
+msgstr ""
+
+#: src/component/org/employee/config.js:42
+msgid "Contract start date"
+msgstr ""
+
+#: src/component/org/employee/config.js:43
+msgid "Contract expiry date"
+msgstr ""
+
+#: src/component/org/employee/config.js:44
+msgid "Insurance premiums"
+msgstr ""
+
+#: src/component/org/employee/config.js:45
+msgid "Insurance start date"
+msgstr ""
+
+#: src/component/org/employee/config.js:46
+msgid "Insurance expiry date"
+msgstr ""
+
+#: src/component/org/employee/config.js:47
+msgid "Labour status"
+msgstr ""
+
+#: src/component/org/employee/config.js:48
+msgid "Labour status start date"
+msgstr ""
+
+#: src/component/org/employee/config.js:49
+msgid "Labour status expiry date"
+msgstr ""
+
+#: src/component/org/employee/config.js:50
+msgid "Working start date"
+msgstr ""
+
+#: src/component/org/employee/config.js:51
+msgid "Year experience"
+msgstr ""
+
+#: src/component/org/employee/config.js:52
+msgid "Gender"
+msgstr ""
+
+#: src/component/org/employee/config.js:53
+msgid "Birth date"
+msgstr ""
+
+#: src/component/org/employee/config.js:54
+msgid "Birth place"
+msgstr ""
+
+#: src/component/org/employee/config.js:55
+msgid "ID card number"
+msgstr ""
+
+#: src/component/org/employee/config.js:56
+msgid "ID card date"
+msgstr ""
+
+#: src/component/org/employee/config.js:57
+msgid "ID card place"
+msgstr ""
+
+#: src/component/org/employee/config.js:58
+msgid "Permanent address"
+msgstr ""
+
+#: src/component/org/company/config.js:43
+#: src/component/org/employee/config.js:59
+msgid "Contact address"
+msgstr ""
+
+#: src/component/org/employee/config.js:60
+msgid "Education level"
+msgstr ""
+
+#: src/component/org/employee/config.js:61
+msgid "Personal tax code"
+msgstr ""
+
+#: src/component/org/employee/config.js:62
+msgid "Dependent person"
+msgstr ""
+
+#: src/component/org/company/config.js:50
+#: src/component/org/employee/config.js:63
+msgid "Insurance code"
+msgstr ""
+
+#: src/component/org/company/config.js:59
+#: src/component/org/employee/config.js:64
+msgid "Bank name"
+msgstr ""
+
+#: src/component/org/company/config.js:60
+#: src/component/org/employee/config.js:65
+msgid "Bank branch"
+msgstr ""
+
+#: src/component/org/company/config.js:61
+#: src/component/org/employee/config.js:66
+msgid "Bank account number"
+msgstr ""
+
+#: src/component/config/variable/config.js:23
+msgid "ID"
+msgstr ""
+
+#: src/component/config/variable/config.js:24
+msgid "Value"
+msgstr ""
+
+#: src/component/config/variable/config.js:25
+msgid "Description"
+msgstr ""
+
+#: src/component/config/variable/config.js:26
+msgid "Type"
+msgstr ""
+
+#: src/component/account/admin/config.js:21
+#: src/component/common/layout/main/index.jsx:76
+#. 
+#. PemUtil.canView("Group") &&
+#. result.push({
+#. label: t`Group`,
+#. key: "/app/role/group",
+#. icon: <UsergroupAddOutlined />
+#. });
+#. 
+msgid "Admin"
+msgstr ""
+
+#: src/component/account/assistant/config.js:14
+#: src/component/account/director/config.js:14
+#: src/component/account/staff_bak/config.js:14
+#: src/component/account/vendor/config.js:14
+msgid "Vendor"
+msgstr ""
+
+#: src/component/account/assistant/profile/update/form.jsx:15
+#: src/component/account/director/profile/update/form.jsx:15
+#: src/component/account/employee/profile/index.jsx:49
+#: src/component/account/staff_bak/profile/index.jsx:51
+#: src/component/account/staff_bak/profile/update/form.jsx:15
+#: src/component/account/vendor/profile/index.jsx:51
+#: src/component/account/vendor/profile/update/form.jsx:15
+msgid "Organization name"
+msgstr ""
+
+#: src/component/account/assistant/profile/update/form.jsx:20
+#: src/component/account/director/profile/update/form.jsx:20
+#: src/component/account/employee/profile/index.jsx:54
+#: src/component/account/staff_bak/profile/index.jsx:56
+#: src/component/account/staff_bak/profile/update/form.jsx:20
+#: src/component/account/vendor/profile/index.jsx:56
+#: src/component/account/vendor/profile/update/form.jsx:20
+msgid "Organization ID"
+msgstr ""
+
+#: src/component/account/vendor/profile/update/index.jsx:45
+msgid "Update vendor profile"
+msgstr ""
+
+#: src/component/account/staff/profile/update/index.jsx:45
+#: src/component/account/staff_bak/profile/update/index.jsx:45
+msgid "Update staff profile"
+msgstr ""
+
+#: src/component/account/admin/config.js:30
+#: src/component/account/admin/profile/update/form.jsx:15
+#: src/component/account/employee/crud/config.js:37
+#: src/component/account/staff/config.js:30
+#: src/component/account/staff/profile/update/form.jsx:15
+#: src/component/document/insurance_record/config.js:27
+#: src/component/document/salary_policy/config.js:27
+#: src/component/document/salary_record/config.js:27
+#: src/component/document/tax_record/config.js:27
+#: src/component/org/company/config.js:40
+#: src/component/org/company/config.js:67
+#: src/component/org/company/detail.jsx:215
+#: src/component/org/company/detail.jsx:264
+msgid "Name"
+msgstr ""
+
+#: src/component/account/employee/crud/config.js:36
+msgid "Avatar"
+msgstr ""
+
+#: src/component/account/admin/config.js:32
+#: src/component/account/employee/crud/config.js:39
+#: src/component/account/staff/config.js:32
+#: src/component/org/company/config.js:69
+#: src/component/org/company/detail.jsx:227
+#: src/component/org/company/detail.jsx:276
+msgid "Mobile"
+msgstr ""
+
+#: src/component/account/employee/crud/config.js:40
+msgid "Enabled"
+msgstr ""
+
+#: src/component/account/director/profile/update/index.jsx:45
+msgid "Update director profile"
+msgstr ""
+
+#: src/component/account/assistant/profile/update/index.jsx:45
+msgid "Update assistant profile"
+msgstr ""
+
+#: src/component/account/admin/profile/update/index.jsx:45
+msgid "Update admin profile"
+msgstr ""
+
+#: src/component/org/employee/dialog/form.jsx:280
+msgid "Position section"
+msgstr ""
+
+#: src/component/org/employee/dialog/form.jsx:290
+msgid "Personal information section"
+msgstr ""
+
+#: src/component/org/employee/dialog/form.jsx:351
+msgid "Change deparment section"
+msgstr ""
+
+#: src/component/org/employee/dialog/form.jsx:365
+msgid "Contract section"
+msgstr ""
+
+#: src/component/org/employee/dialog/form.jsx:386
+msgid "Insurance section"
+msgstr ""
+
+#: src/component/org/employee/dialog/form.jsx:404
+msgid "Labour section"
+msgstr ""
+
+#: src/component/org/employee/dialog/form.jsx:429
+msgid "Bank section"
+msgstr ""
+
+#: src/component/org/position/config.js:25
+msgid "Title/Department code"
+msgstr ""
+
+#: src/component/org/position/config.js:26
+msgid "Title/Department name"
+msgstr ""
+
+#: src/component/org/position/config.js:27
+msgid "Parent department"
+msgstr ""
+
+#: src/component/support/meeting/config.js:15
+msgid "meeting"
+msgstr ""
+
+#: src/component/support/meeting/config.js:24
+msgid "Meeting title"
+msgstr ""
+
+#: src/component/support/meeting/config.js:25
+msgid "Start time"
+msgstr ""
+
+#: src/component/org/employee/config.js:31
+msgid "Full name"
+msgstr ""
+
+#: src/component/org/company/config.js:39
+msgid "Code"
+msgstr ""
+
+#: src/component/org/company/config.js:41
+msgid "English name"
+msgstr ""
+
+#: src/component/org/company/config.js:42
+msgid "Short name"
+msgstr ""
+
+#: src/component/org/company/config.js:44
+msgid "Register address"
+msgstr ""
+
+#: src/component/org/company/config.js:45
+msgid "Other address"
+msgstr ""
+
+#: src/component/org/company/config.js:47
+msgid "Fax number"
+msgstr ""
+
+#: src/component/org/company/config.js:48
+msgid "Establish date"
+msgstr ""
+
+#: src/component/org/company/config.js:49
+msgid "Tax code"
+msgstr ""
+
+#: src/component/org/company/config.js:52
+msgid "Rep name"
+msgstr ""
+
+#: src/component/org/company/config.js:53
+msgid "Rep position"
+msgstr ""
+
+#: src/component/org/company/config.js:54
+msgid "Rep birth date"
+msgstr ""
+
+#: src/component/org/company/config.js:55
+msgid "Rep ID card number"
+msgstr ""
+
+#: src/component/org/company/config.js:56
+msgid "Rep phone number"
+msgstr ""
+
+#: src/component/org/company/config.js:57
+msgid "Rep email"
+msgstr ""
+
+#: src/component/org/company/config.js:64
+msgid "Activated at"
+msgstr ""
+
+#: src/component/org/company/detail.jsx:47
+msgid "Company info"
+msgstr ""
+
+#: src/component/org/company/detail.jsx:189
+msgid "Create director"
+msgstr ""
+
+#: src/component/org/company/detail.jsx:200
+msgid "Director info"
+msgstr ""
+
+#: src/component/org/company/detail.jsx:238
+msgid "Create assistant"
+msgstr ""
+
+#: src/component/org/company/detail.jsx:249
+msgid "Assistant info"
+msgstr ""
+
+#: src/component/org/company/table.jsx:34
+msgid "Activate"
+msgstr ""
+
+#: src/component/org/company/table.jsx:48
+msgid "Assign"
+msgstr ""
+
+#: src/component/org/company/table.jsx:140
+#, javascript-format
+msgid "Do you want to activate company: ${ name }?"
+msgstr ""
+
+#: src/component/org/company/director_dialog/index.jsx:64
+msgid "Add new director"
+msgstr ""
+
+#: src/component/org/company/dialog/form.jsx:155
+msgid "Company information"
+msgstr ""
+
+#: src/component/org/company/dialog/form.jsx:196
+msgid "Representative information"
+msgstr ""
+
+#: src/component/org/company/dialog/form.jsx:221
+msgid "Bank information"
+msgstr ""
+
+#: src/component/org/company/assistant_dialog/index.jsx:64
+msgid "Add new assistant"
+msgstr ""
+
+#: src/component/org/company/assign_dialog/index.jsx:54
+msgid "Update support staff"
+msgstr ""
+
+#: src/component/org/assigning_company/config.js:14
+msgid "AssigningCompany"
+msgstr ""
+
+#: src/component/org/assigning_company/config.js:25
+msgid "Assigner"
+msgstr ""
+
+#: src/component/document/tax_record/config.js:16
+msgid "Tax record"
+msgstr ""
+
+#: src/component/common/layout/work/index.jsx:95
+#: src/component/document/salary_record/config.js:16
+msgid "Salary record"
+msgstr ""
+
+#: src/component/document/salary_record/index.jsx:24
+msgid "Salary"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:16
+msgid "SalaryPolicy"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:16
+msgid "Insurance record"
+msgstr ""
+
+#: src/component/config/variable/config.js:14
+msgid "Variable"
+msgstr ""
+
+#: src/component/common/table/button.jsx:72
+msgid "View"
+msgstr ""
+
+#: src/component/common/layout/main/index.jsx:148
+#: src/component/common/layout/work/index.jsx:88
+msgid "Salary policy"
+msgstr ""
+
+#: src/component/common/layout/main/index.jsx:176
+#: src/component/common/layout/work/index.jsx:121
+msgid "Logout"
+msgstr ""
+
+#: src/component/common/layout/main/index.jsx:106
+#: src/component/common/layout/main/index.jsx:117
+msgid "ChatMessage"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:31
+#: src/component/document/salary_policy/config.js:31
+#: src/component/document/salary_record/config.js:31
+#: src/component/document/tax_record/config.js:31
+msgid "Department"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:32
+msgid "Monthly position salary"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:33
+msgid "Monthly base salary"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:34
+#: src/component/document/salary_record/config.js:37
+msgid "Monthly performance bonus"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:35
+#: src/component/document/salary_record/config.js:38
+msgid "Quarterly performance bonus"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:36
+#: src/component/document/salary_record/config.js:39
+msgid "Annual performance bonus"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:37
+#: src/component/document/salary_record/config.js:40
+msgid "Sale bonus"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:38
+#: src/component/document/salary_record/config.js:41
+msgid "Project bonus"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:39
+#: src/component/document/salary_record/config.js:43
+msgid "Meal allowance"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:40
+#: src/component/document/salary_record/config.js:44
+msgid "Phone allowance"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:41
+#: src/component/document/salary_record/config.js:45
+msgid "Vehicle allowance"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:42
+#: src/component/document/salary_record/config.js:46
+msgid "Housing allowance"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:43
+#: src/component/document/salary_record/config.js:47
+msgid "Attraction allowance"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:44
+#: src/component/document/salary_record/config.js:48
+msgid "Seniority allowance"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:45
+#: src/component/document/salary_record/config.js:49
+msgid "Responsibility allowance"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:46
+#: src/component/document/salary_record/config.js:50
+msgid "Concurrently allowance"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:47
+#: src/component/document/salary_record/config.js:51
+msgid "Birth day allowance"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:48
+#: src/component/document/salary_record/config.js:52
+msgid "Public holiday allowance"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:49
+#: src/component/document/salary_record/config.js:53
+msgid "Health insurance allowance"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:50
+#: src/component/document/salary_record/config.js:54
+msgid "Travel allowance"
+msgstr ""
+
+#: src/component/document/salary_policy/config.js:51
+#: src/component/document/salary_record/config.js:56
+msgid "Gross income"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:32
+#: src/component/document/salary_record/config.js:32
+#: src/component/document/tax_record/config.js:32
+msgid "Month"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:33
+msgid "Working days"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:34
+msgid "OT days"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:35
+msgid "Base salary"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:36
+msgid "OT salary"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:42
+msgid "Bonus notes"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:55
+msgid "Allowance notes"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:57
+msgid "Social insurance"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:58
+msgid "Personal tax"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:59
+msgid "NET income"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:60
+msgid "Advance amount"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:61
+msgid "Revert amount"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:62
+msgid "Advance revert amount notes"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:63
+msgid "Final settlement amount"
+msgstr ""
+
+#: src/component/document/salary_record/config.js:64
+msgid "Payment date"
+msgstr ""
+
+#: src/component/document/tax_record/config.js:33
+msgid "Monthly income"
+msgstr ""
+
+#: src/component/document/tax_record/config.js:34
+msgid "Pretax income"
+msgstr ""
+
+#: src/component/document/tax_record/config.js:35
+msgid "Personal allowance"
+msgstr ""
+
+#: src/component/document/tax_record/config.js:36
+msgid "Family allowance members"
+msgstr ""
+
+#: src/component/document/tax_record/config.js:37
+msgid "Family allowance"
+msgstr ""
+
+#: src/component/document/tax_record/config.js:38
+msgid "Deducted income"
+msgstr ""
+
+#: src/component/document/tax_record/config.js:39
+msgid "Taxable income"
+msgstr ""
+
+#: src/component/document/tax_record/config.js:40
+msgid "Tax rate"
+msgstr ""
+
+#: src/component/document/tax_record/config.js:41
+msgid "Personal income tax"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:33
+msgid "Applied salary"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:34
+msgid "Applied benefit"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:35
+msgid "Is social insurance target"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:36
+#: src/component/document/insurance_record/config.js:40
+msgid "Retirement fund"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:37
+#: src/component/document/insurance_record/config.js:43
+msgid "Medical insurance fund"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:38
+#: src/component/document/insurance_record/config.js:44
+msgid "Voluntary insurance fund"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:41
+msgid "Sickness maternity fund"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:42
+msgid "Accident occupational disease fund"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:46
+msgid "Union fee"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:39
+msgid "Employee paid amount"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:45
+msgid "Company paid amount"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:47
+msgid "Company total paid amount"
+msgstr ""
+
+#: src/component/document/insurance_record/config.js:48
+msgid "Company total paid amount with union fee"
+msgstr ""
+
+#: src/component/common/layout/work/index.jsx:59
+msgid "Back"
+msgstr ""
+
+#: src/component/document/insurance_record/table.jsx:122
+#: src/component/document/salary_record/table.jsx:121
+msgid "Employee informaton"
+msgstr ""
+
+#: src/component/document/salary_record/table.jsx:163
+msgid "Working days & monthly salary"
+msgstr ""
+
+#: src/component/document/salary_record/table.jsx:196
+msgid "Bonus"
+msgstr ""
+
+#: src/component/document/salary_record/table.jsx:242
+msgid "Allowance"
+msgstr ""
+
+#: src/component/document/salary_record/table.jsx:370
+msgid "Advance / revert amount"
+msgstr ""
+
+#: src/component/document/insurance_record/dialog/form.jsx:185
+#: src/component/document/insurance_record/table.jsx:186
+msgid "Employee responsibility"
+msgstr ""
+
+#: src/component/document/insurance_record/dialog/form.jsx:198
+#: src/component/document/insurance_record/table.jsx:219
+msgid "Company responsibility"
+msgstr ""

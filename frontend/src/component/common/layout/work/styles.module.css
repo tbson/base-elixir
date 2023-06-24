@@ -1,0 +1,49 @@
+.wrapperContainer {
+    min-height: 100vh;
+}
+
+.wrapperContainer :global(.trigger) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 5px 5px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.wrapperContainer :global(.trigger:hover) {
+    color: #1890ff;
+}
+
+.wrapperContainer :global(.logo) {
+    height: 34px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background: #EEEEEE;
+    padding-top: 5px;
+    padding-left: 25px;
+}
+
+.wrapperContainer :global(.ant-menu-inline) {
+    border-inline-end: none !important;
+}
+
+.wrapperContainer :global(.site-layout) {
+    border-left: 1px solid #D2D2D2;
+}
+
+.wrapperContainer :global(.site-layout) :global(.site-layout-header) {
+    background: #EEEEEE;
+    height: 34px;
+    line-height: 34px;
+}
+
+.wrapperContainer :global(.site-layout) :global(.site-layout-content) {
+    background: #fff;
+}
+
+.wrapperContainer :global(.layout-footer) {
+    height: 34px;
+    padding: 7px 7px;
+    text-align: center;
+}

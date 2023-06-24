@@ -1,0 +1,48 @@
+#!/bin/bash
+
+set -e
+
+REPO=base
+SERVER=tbson@base_server
+BASE_DIR=~/Code/web/$REPO
+REMOTE_DIR=/src/$REPO
+
+deploy_client() {
+    echo "[+] Cleaning up..."
+    cd $BASE_DIR/frontend
+    rm -rf ./dist && mkdir ./dist && chmod 755 ./dist
+
+    echo "[+] Building..."
+    cd $BASE_DIR/frontend
+    scp $SERVER:$REMOTE_DIR/frontend/.env.production.local ./
+    cd $BASE_DIR/docker
+    ./exec yarn build
+
+    echo "[+] Copying..."
+    cd $BASE_DIR/frontend
+    rm -rf client
+    cp -r ./dist client
+    ssh -t $SERVER "rm -rf $REMOTE_DIR/backend/public/client"
+    scp -r ./client $SERVER:$REMOTE_DIR/backend/public
+    rm -rf client
+    # ssh -t $SERVER "cd $REMOTE_DIR/docker && git pull && ./exec restart"
+    echo "[+] DONE"
+}
+
+deploy_server() {
+    ssh -t $SERVER "cd $REMOTE_DIR/docker && git pull && docker restart ${REPO}_backend"
+}
+
+sync_logs() {
+    scp -r $SERVER:$REMOTE_DIR/backend/logs $BASE_DIR/backend
+}
+
+if [[ "$1" == fdeploy ]]; then
+    deploy_client 
+elif [[ "$1" == bdeploy ]]; then
+    deploy_server
+elif [[ "$1" == sync_logs ]]; then
+    sync_logs 
+else
+    ssh -t $SERVER "cd $REMOTE_DIR/docker ; bash"
+fi

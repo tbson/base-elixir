@@ -1,0 +1,130 @@
+version: "2.1"
+
+networks:
+  shared_network:
+    external: true
+
+services:
+    base_broker:
+        container_name: base_broker
+        image: "rabbitmq:3.11.6-management"
+        ports:
+            # - "5672:5672"
+            - "15672:15672"
+        healthcheck:
+            test: rabbitmq-diagnostics -q ping
+            interval: 30s
+            timeout: 30s
+            retries: 3
+        networks:
+            - shared_network
+        environment:
+            - RABBITMQ_DEFAULT_USER=${RABBITMQ_USER}
+            - RABBITMQ_DEFAULT_PASS=${RABBITMQ_PASS}
+    base_pg:
+        container_name: base_pg
+        image: "postgres:15.1-alpine"
+        environment:
+            - POSTGRES_USER=${DB_USER}
+            - POSTGRES_PASSWORD=${DB_PASSWORD}
+            - POSTGRES_DB=${DB_NAME}
+        ports:
+            - "5432:5432"
+        volumes:
+            - ./db_ext/db_ext.sql:/docker-entrypoint-initdb.d/ext.sql
+            - ./dbdata/pg:/var/lib/postgresql/data/:delegated
+        networks:
+          - shared_network 
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready"]
+            interval: 10s
+            timeout: 5s
+            retries: 18
+
+    base_backend:
+        container_name: base_backend
+        build:
+            context: ../backend
+            dockerfile: ../docker/dockerfiles/backend
+        volumes:
+            - ../backend:/code:cached
+            - ../backend/deps:/artifacts/deps:cached
+            - ../backend/_build:/artifacts/_build:cached
+        networks:
+          - shared_network
+        environment:
+            - MIX_ENV=${MIX_ENV}
+            - SECRET_KEY_BASE=${SECRET_KEY_BASE}
+            - POOL_SIZE=${POOL_SIZE}
+            - JOKEN_SECRET=${JOKEN_SECRET}
+            - APP_NAME=${APP_NAME}
+            - DOMAIN=${DOMAIN}
+            - PHX_HOST=${DOMAIN}
+
+            - DB_USER=${DB_USER}
+            - DB_PASSWORD=${DB_PASSWORD}
+            - DB_NAME=${DB_NAME}
+            - DB_HOST=${DB_HOST}
+            - DB_PORT=${DB_PORT}
+            - DB_URL=ecto://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}
+
+            - RABBITMQ_USER=${RABBITMQ_USER}
+            - RABBITMQ_PASS=${RABBITMQ_PASS}
+            - RABBITMQ_HOST=${RABBITMQ_HOST}
+            - RABBITMQ_URL=amqp://${RABBITMQ_USER}:${RABBITMQ_PASS}@${RABBITMQ_HOST}
+
+            - EMAIL_ENABLE=${EMAIL_ENABLE}
+            - EMAIL_HOST=${EMAIL_HOST}
+            - EMAIL_PORT=${EMAIL_PORT}
+            - EMAIL_USER=${EMAIL_USER}
+            - EMAIL_PASSWORD=${EMAIL_PASSWORD}
+            - EMAIL_DEFAULT_FROM=${EMAIL_DEFAULT_FROM}
+
+            - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+            - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+
+            - ELIXIR_BUILD_PATH=/artifacts/_build
+            - ELIXIR_DEPS_PATH=/artifacts/deps 
+            - SENTRY_DSN=${SENTRY_DSN}
+
+            - TMP_PWD=${TMP_PWD}
+        ports:
+            - "4000:4000"
+        depends_on:
+            base_pg:
+                condition: service_healthy
+        tty: ${DOCKER_TTY}
+        command: ${DOCKER_COMMAND}
+
+    base_frontend:
+      container_name: base_frontend 
+      build:
+        context: ../frontend
+        dockerfile: ../docker/dockerfiles/frontend
+      volumes:
+        - ../frontend:/code:cached
+        - /code/node_modules
+      networks:
+          - shared_network
+      tty: ${DOCKER_TTY}
+
+    base_nginx:
+        container_name: base_nginx
+        build:
+            context: ./
+            dockerfile: ./dockerfiles/nginx
+        restart: always
+        volumes:
+            - ./conf.d:/etc/nginx/conf.d
+            - ${SSL_PATH}:/resource/ssl
+            - ../backend/public/:/resource/public
+        networks:
+          - shared_network
+        ports:
+            - "443:443"
+            - "80:80"
+        depends_on:
+            - base_backend
+
+volumes:
+  artifacts: {}

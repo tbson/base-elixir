@@ -1,0 +1,1096 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals = 1; plural = 0;\n"
+"mime-version: 1.0\n"
+"x-generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: src/component/auth/login/index.jsx:59
+msgid "Forgot password"
+msgstr "Quên mật khẩu"
+
+#: src/component/auth/login/form.jsx:20
+msgid "Username"
+msgstr "Tên đăng nhập"
+
+#: src/component/account/admin/config.js:33
+#: src/component/account/staff/config.js:33
+#: src/component/auth/login/form.jsx:25 src/component/org/company/config.js:70
+msgid "Password"
+msgstr "Mật khẩu"
+
+#: src/component/auth/login/form.jsx:55 src/component/auth/login/index.jsx:52
+msgid "Login"
+msgstr "Đăng nhập"
+
+#: src/component/common/layout/main/index.jsx:58
+#: src/component/common/layout/work/index.jsx:116
+msgid "Profile"
+msgstr "Hồ sơ"
+
+#: src/component/common/layout/main/index.jsx:62
+msgid "Config"
+msgstr "Cấu hình"
+
+#: src/component/common/layout/main/index.jsx:88
+#: src/component/common/layout/main/index.jsx:128
+#: src/component/common/layout/work/index.jsx:67
+#: src/component/org/assigning_company/config.js:23
+#: src/component/org/company/config.js:30
+#: src/component/org/employee/config.js:26
+msgid "Company"
+msgstr "Công ty"
+
+#: src/component/account/staff/config.js:21
+#: src/component/common/layout/main/index.jsx:82
+#: src/component/org/assigning_company/config.js:24
+#: src/component/org/company/config.js:63
+msgid "Staff"
+msgstr "Nhân viên"
+
+#: src/component/role/group/config.js:14
+msgid "Group"
+msgstr "Nhóm"
+
+#: src/component/account/admin/profile/index.jsx:36
+#: src/component/account/assistant/profile/index.jsx:36
+#: src/component/account/director/profile/index.jsx:36
+#: src/component/account/employee/profile/index.jsx:34
+#: src/component/account/staff/profile/index.jsx:36
+#: src/component/account/staff_bak/profile/index.jsx:36
+#: src/component/account/vendor/profile/index.jsx:36
+msgid "Fullname"
+msgstr "Họ và tên"
+
+#: src/component/account/admin/config.js:31
+#: src/component/account/admin/profile/index.jsx:41
+#: src/component/account/assistant/profile/index.jsx:41
+#: src/component/account/director/profile/index.jsx:41
+#: src/component/account/employee/crud/config.js:38
+#: src/component/account/employee/profile/index.jsx:39
+#: src/component/account/staff/config.js:31
+#: src/component/account/staff/profile/index.jsx:41
+#: src/component/account/staff_bak/profile/index.jsx:41
+#: src/component/account/vendor/profile/index.jsx:41
+#: src/component/auth/reset_pwd/form.jsx:26
+#: src/component/document/insurance_record/config.js:28
+#: src/component/document/salary_policy/config.js:28
+#: src/component/document/salary_record/config.js:28
+#: src/component/document/tax_record/config.js:28
+#: src/component/org/company/config.js:68
+#: src/component/org/company/detail.jsx:221
+#: src/component/org/company/detail.jsx:270
+#: src/component/org/employee/config.js:33
+msgid "Email"
+msgstr "Email"
+
+#: src/component/account/admin/profile/index.jsx:46
+#: src/component/account/assistant/profile/index.jsx:46
+#: src/component/account/director/profile/index.jsx:46
+#: src/component/account/employee/profile/index.jsx:44
+#: src/component/account/staff/profile/index.jsx:46
+#: src/component/account/staff_bak/profile/index.jsx:46
+#: src/component/account/vendor/profile/index.jsx:46
+#: src/component/document/insurance_record/config.js:29
+#: src/component/document/salary_policy/config.js:29
+#: src/component/document/salary_record/config.js:29
+#: src/component/document/tax_record/config.js:29
+#: src/component/org/employee/config.js:32
+msgid "Phone number"
+msgstr "Số điện thoại"
+
+#: src/component/account/employee/crud/config.js:41
+msgid "Groups"
+msgstr "Nhóm"
+
+#: src/component/account/admin/profile/index.jsx:60
+#: src/component/account/admin/profile/update/index.jsx:42
+#: src/component/account/assistant/profile/index.jsx:60
+#: src/component/account/assistant/profile/update/index.jsx:42
+#: src/component/account/director/profile/index.jsx:60
+#: src/component/account/director/profile/update/index.jsx:42
+#: src/component/account/staff/profile/index.jsx:60
+#: src/component/account/staff/profile/update/index.jsx:42
+#: src/component/account/staff_bak/profile/index.jsx:70
+#: src/component/account/staff_bak/profile/update/index.jsx:42
+#: src/component/account/vendor/profile/index.jsx:70
+#: src/component/account/vendor/profile/update/index.jsx:42
+msgid "Update profile"
+msgstr "Cập nhật hồ sơ"
+
+#: src/component/auth/change_pwd/index.jsx:39
+#: src/component/auth/change_pwd/index.jsx:42
+msgid "Change password"
+msgstr "Đổi mật khẩu"
+
+#: src/component/auth/reset_pwd/index.jsx:51
+#: src/component/auth/reset_pwd/index.jsx:53
+msgid "Reset password"
+msgstr "Khôi phục mật khẩu"
+
+#: src/component/account/admin/dialog/index.jsx:66
+#: src/component/account/admin/profile/update/index.jsx:44
+#: src/component/account/assistant/profile/update/index.jsx:44
+#: src/component/account/director/profile/update/index.jsx:44
+#: src/component/account/employee/crud/dialog/index.jsx:68
+#: src/component/account/staff/dialog/index.jsx:66
+#: src/component/account/staff/profile/update/index.jsx:44
+#: src/component/account/staff_bak/profile/update/index.jsx:44
+#: src/component/account/vendor/profile/update/index.jsx:44
+#: src/component/auth/change_pwd/index.jsx:41
+#: src/component/auth/reset_pwd/index.jsx:52
+#: src/component/config/variable/dialog/index.jsx:65
+#: src/component/document/insurance_record/dialog/index.jsx:68
+#: src/component/document/salary_policy/dialog/index.jsx:68
+#: src/component/document/salary_record/dialog/index.jsx:68
+#: src/component/document/tax_record/dialog/index.jsx:68
+#: src/component/org/assigning_company/dialog/index.jsx:65
+#: src/component/org/company/assign_dialog/index.jsx:53
+#: src/component/org/company/assistant_dialog/index.jsx:63
+#: src/component/org/company/dialog/index.jsx:65
+#: src/component/org/company/director_dialog/index.jsx:63
+#: src/component/org/employee/dialog/index.jsx:68
+#: src/component/org/position/dialog/index.jsx:65
+#: src/component/role/group/dialog/index.jsx:65
+#: src/component/support/meeting/dialog/index.jsx:65
+msgid "Cancel"
+msgstr "Thoát"
+
+#: src/component/auth/change_pwd/form.jsx:20
+msgid "Old password"
+msgstr "Mật khẩu cũ"
+
+#: src/component/auth/change_pwd/form.jsx:25
+msgid "New password"
+msgstr "Mật khẩu mới"
+
+#: src/component/auth/change_pwd/form.jsx:30
+msgid "Confirm new password"
+msgstr "Xác nhận mật khẩu mới"
+
+#: src/util/dialog_util.js:12
+msgid "Add new"
+msgstr "Thêm mới"
+
+#: src/component/account/admin/dialog/index.jsx:64
+#: src/component/account/employee/crud/dialog/index.jsx:66
+#: src/component/account/staff/dialog/index.jsx:64
+#: src/component/config/variable/dialog/index.jsx:63
+#: src/component/document/insurance_record/dialog/index.jsx:66
+#: src/component/document/salary_policy/dialog/index.jsx:66
+#: src/component/document/salary_record/dialog/index.jsx:66
+#: src/component/document/tax_record/dialog/index.jsx:66
+#: src/component/org/assigning_company/dialog/index.jsx:63
+#: src/component/org/company/assign_dialog/index.jsx:51
+#: src/component/org/company/assistant_dialog/index.jsx:61
+#: src/component/org/company/dialog/index.jsx:63
+#: src/component/org/company/director_dialog/index.jsx:61
+#: src/component/org/employee/dialog/index.jsx:66
+#: src/component/org/position/dialog/index.jsx:63
+#: src/component/role/group/dialog/index.jsx:63
+#: src/component/support/meeting/dialog/index.jsx:63
+msgid "Save"
+msgstr "Lưu"
+
+#: src/component/common/table/button.jsx:38 src/util/dialog_util.js:12
+msgid "Update"
+msgstr "Cập nhật"
+
+#: src/component/account/admin/config.js:25
+#: src/component/account/employee/crud/config.js:31
+#: src/component/account/staff/config.js:25
+#: src/component/config/variable/config.js:18
+#: src/component/document/insurance_record/config.js:20
+#: src/component/document/salary_policy/config.js:20
+#: src/component/document/salary_record/config.js:20
+#: src/component/document/tax_record/config.js:20
+#: src/component/org/assigning_company/config.js:18
+#: src/component/org/company/config.js:34
+#: src/component/org/employee/config.js:20
+#: src/component/org/position/config.js:20
+#: src/component/role/group/config.js:18
+#: src/component/support/meeting/config.js:19
+#, javascript-format
+msgid "Do you want to remote this ${ name }?"
+msgstr "Bạn có muốn xóa ${ name } này?"
+
+#: src/component/account/admin/config.js:26
+#: src/component/account/employee/crud/config.js:32
+#: src/component/account/staff/config.js:26
+#: src/component/config/variable/config.js:19
+#: src/component/document/insurance_record/config.js:21
+#: src/component/document/salary_policy/config.js:21
+#: src/component/document/salary_record/config.js:21
+#: src/component/document/tax_record/config.js:21
+#: src/component/org/assigning_company/config.js:19
+#: src/component/org/company/config.js:35
+#: src/component/org/employee/config.js:21
+#: src/component/org/position/config.js:21
+#: src/component/role/group/config.js:19
+#: src/component/support/meeting/config.js:20
+msgid "Do you want to remote these ${ name }?"
+msgstr "Bạn có muốn xóa những ${ name } này?"
+
+#: src/component/role/group/config.js:23
+msgid "Group name"
+msgstr "Tên nhóm"
+
+#: src/component/role/group/config.js:24
+msgid "Permissions"
+msgstr "Quyền"
+
+#: src/component/common/table/search_input.jsx:25
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: src/component/common/table/button.jsx:54
+msgid "Remove"
+msgstr "Xóa"
+
+#: src/util/form_util.js:82
+msgid "The input is not valid E-mail"
+msgstr "Dữ liệu nhập vào không phải email"
+
+#: src/component/common/layout/main/index.jsx:134
+#: src/component/common/layout/work/index.jsx:74
+#: src/component/org/employee/config.js:27
+#: src/component/org/position/config.js:16
+msgid "Position"
+msgstr "Vị trí"
+
+#: src/component/org/position/preview.jsx:42
+msgid "UID"
+msgstr "UID"
+
+#: src/component/document/insurance_record/config.js:30
+#: src/component/document/salary_policy/config.js:30
+#: src/component/document/salary_record/config.js:30
+#: src/component/document/tax_record/config.js:30
+#: src/component/org/position/preview.jsx:48
+msgid "Title"
+msgstr "Chức danh"
+
+#: src/component/org/position/config.js:28
+msgid "Is department"
+msgstr "Là phòng ban"
+
+#: src/component/org/position/config.js:29
+msgid "Is head"
+msgstr "Là trưởng phòng ban"
+
+#: src/component/org/position/config.js:30
+msgid "Order"
+msgstr "Thứ tự"
+
+#: src/component/document/salary_policy/table.jsx:324
+#: src/component/document/salary_record/index.jsx:70
+#: src/component/org/employee/table.jsx:247
+#: src/component/org/position/table.jsx:103
+msgid "Sample file"
+msgstr "File mẫu"
+
+#: src/component/account/employee/config.js:14
+#: src/component/account/employee/crud/config.js:27
+#: src/component/common/layout/main/index.jsx:141
+#: src/component/common/layout/work/index.jsx:81
+#: src/component/document/insurance_record/config.js:25
+#: src/component/document/salary_policy/config.js:25
+#: src/component/document/salary_record/config.js:25
+#: src/component/document/tax_record/config.js:25
+#: src/component/org/employee/config.js:16
+msgid "Employee"
+msgstr "Nhân viên"
+
+#: src/component/document/insurance_record/config.js:26
+#: src/component/document/salary_policy/config.js:26
+#: src/component/document/salary_record/config.js:26
+#: src/component/document/tax_record/config.js:26
+#: src/component/org/employee/config.js:25
+msgid "Employee code"
+msgstr "Mã nhân viên"
+
+#: src/component/org/employee/config.js:28
+msgid "Title level"
+msgstr "Cấp chức danh"
+
+#: src/component/org/employee/config.js:29
+msgid "First name"
+msgstr "Tên"
+
+#: src/component/org/employee/config.js:30
+msgid "Last name"
+msgstr "Họ & tên đệm"
+
+#: src/component/org/employee/config.js:34
+msgid "Change department doc number"
+msgstr "Số quyết định thay đổi phòng ban"
+
+#: src/component/org/employee/config.js:35
+msgid "Change department doc start date"
+msgstr "Ngày hiệu lực thay đổi phòng ban"
+
+#: src/component/org/employee/config.js:36
+msgid "Change department doc expiry date"
+msgstr "Ngày hết hạn thay đổi phòng ban"
+
+#: src/component/org/employee/config.js:37
+msgid "Change title doc number"
+msgstr "Số quyết định thay đổi chức danh"
+
+#: src/component/org/employee/config.js:38
+msgid "Change title doc start date"
+msgstr "Ngày hiệu lực thay đổi chức danh"
+
+#: src/component/org/employee/config.js:39
+msgid "Change title doc expiry date"
+msgstr "Ngày hết hạn thay đổi chức danh"
+
+#: src/component/org/employee/config.js:40
+msgid "Contract type"
+msgstr "Loại hợp đồng"
+
+#: src/component/org/employee/config.js:41
+msgid "Contract number"
+msgstr "Số hợp đồng"
+
+#: src/component/org/employee/config.js:42
+msgid "Contract start date"
+msgstr "Ngày hiệu lực hợp đồng"
+
+#: src/component/org/employee/config.js:43
+msgid "Contract expiry date"
+msgstr "Ngày hết hạn hợp đồng"
+
+#: src/component/org/employee/config.js:44
+msgid "Insurance premiums"
+msgstr "Ngưỡng đóng bảo hiểm"
+
+#: src/component/org/employee/config.js:45
+msgid "Insurance start date"
+msgstr "Ngày hiệu lực bảo hiểm"
+
+#: src/component/org/employee/config.js:46
+msgid "Insurance expiry date"
+msgstr "Ngày hết hạn bảo hiểm"
+
+#: src/component/org/employee/config.js:47
+msgid "Labour status"
+msgstr "Tình trạng lao động"
+
+#: src/component/org/employee/config.js:48
+msgid "Labour status start date"
+msgstr "Ngày bắt đầu tình trạng lao động"
+
+#: src/component/org/employee/config.js:49
+msgid "Labour status expiry date"
+msgstr "Ngày hết hạn tình trạng lao động"
+
+#: src/component/org/employee/config.js:50
+msgid "Working start date"
+msgstr "Ngày bắt đầu làm"
+
+#: src/component/org/employee/config.js:51
+msgid "Year experience"
+msgstr "Năm kinh nghiệm"
+
+#: src/component/org/employee/config.js:52
+msgid "Gender"
+msgstr "Giới tính"
+
+#: src/component/org/employee/config.js:53
+msgid "Birth date"
+msgstr "Ngày sinh"
+
+#: src/component/org/employee/config.js:54
+msgid "Birth place"
+msgstr "Nơi sinh"
+
+#: src/component/org/employee/config.js:55
+msgid "ID card number"
+msgstr "Số CCCD"
+
+#: src/component/org/employee/config.js:56
+msgid "ID card date"
+msgstr "Ngày cấp CCCD"
+
+#: src/component/org/employee/config.js:57
+msgid "ID card place"
+msgstr "Nơi cấp CCCD"
+
+#: src/component/org/employee/config.js:58
+msgid "Permanent address"
+msgstr "Địa chỉ thường trú"
+
+#: src/component/org/company/config.js:43
+#: src/component/org/employee/config.js:59
+msgid "Contact address"
+msgstr "Địa chỉ liên hệ"
+
+#: src/component/org/employee/config.js:60
+msgid "Education level"
+msgstr "Trình độ học vấn"
+
+#: src/component/org/employee/config.js:61
+msgid "Personal tax code"
+msgstr "Mã số thuế cá nhân"
+
+#: src/component/org/employee/config.js:62
+msgid "Dependent person"
+msgstr "Số người phụ thuộc"
+
+#: src/component/org/company/config.js:50
+#: src/component/org/employee/config.js:63
+msgid "Insurance code"
+msgstr "Số bảo hiểm"
+
+#: src/component/org/company/config.js:59
+#: src/component/org/employee/config.js:64
+msgid "Bank name"
+msgstr "Tên ngân hàng"
+
+#: src/component/org/company/config.js:60
+#: src/component/org/employee/config.js:65
+msgid "Bank branch"
+msgstr "Chi nhánh"
+
+#: src/component/org/company/config.js:61
+#: src/component/org/employee/config.js:66
+msgid "Bank account number"
+msgstr "Số tài khoản"
+
+#: src/component/config/variable/config.js:23
+msgid "ID"
+msgstr "ID"
+
+#: src/component/config/variable/config.js:24
+msgid "Value"
+msgstr "Giá trị"
+
+#: src/component/config/variable/config.js:25
+msgid "Description"
+msgstr "Mô tả"
+
+#: src/component/config/variable/config.js:26
+msgid "Type"
+msgstr "Loại"
+
+#.
+#. PemUtil.canView("Group") &&
+#. result.push({
+#. label: t`Group`,
+#. key: "/app/role/group",
+#. icon: <UsergroupAddOutlined />
+#. });
+#.
+#: src/component/account/admin/config.js:21
+#: src/component/common/layout/main/index.jsx:76
+msgid "Admin"
+msgstr "Quản trị viên"
+
+#: src/component/account/assistant/config.js:14
+#: src/component/account/director/config.js:14
+#: src/component/account/staff_bak/config.js:14
+#: src/component/account/vendor/config.js:14
+msgid "Vendor"
+msgstr "Vendor"
+
+#: src/component/account/assistant/profile/update/form.jsx:15
+#: src/component/account/director/profile/update/form.jsx:15
+#: src/component/account/employee/profile/index.jsx:49
+#: src/component/account/staff_bak/profile/index.jsx:51
+#: src/component/account/staff_bak/profile/update/form.jsx:15
+#: src/component/account/vendor/profile/index.jsx:51
+#: src/component/account/vendor/profile/update/form.jsx:15
+msgid "Organization name"
+msgstr "Tên doanh nghiệp"
+
+#: src/component/account/assistant/profile/update/form.jsx:20
+#: src/component/account/director/profile/update/form.jsx:20
+#: src/component/account/employee/profile/index.jsx:54
+#: src/component/account/staff_bak/profile/index.jsx:56
+#: src/component/account/staff_bak/profile/update/form.jsx:20
+#: src/component/account/vendor/profile/index.jsx:56
+#: src/component/account/vendor/profile/update/form.jsx:20
+msgid "Organization ID"
+msgstr "ID doanh nghiệp"
+
+#: src/component/account/vendor/profile/update/index.jsx:45
+msgid "Update vendor profile"
+msgstr "Cập nhật vendor profile"
+
+#: src/component/account/staff/profile/update/index.jsx:45
+#: src/component/account/staff_bak/profile/update/index.jsx:45
+msgid "Update staff profile"
+msgstr "Cập nhật thông tin nhân viên"
+
+#: src/component/account/admin/config.js:30
+#: src/component/account/admin/profile/update/form.jsx:15
+#: src/component/account/employee/crud/config.js:37
+#: src/component/account/staff/config.js:30
+#: src/component/account/staff/profile/update/form.jsx:15
+#: src/component/document/insurance_record/config.js:27
+#: src/component/document/salary_policy/config.js:27
+#: src/component/document/salary_record/config.js:27
+#: src/component/document/tax_record/config.js:27
+#: src/component/org/company/config.js:40
+#: src/component/org/company/config.js:67
+#: src/component/org/company/detail.jsx:215
+#: src/component/org/company/detail.jsx:264
+msgid "Name"
+msgstr "Tên"
+
+#: src/component/account/employee/crud/config.js:36
+msgid "Avatar"
+msgstr "Ảnh đại diện"
+
+#: src/component/account/admin/config.js:32
+#: src/component/account/employee/crud/config.js:39
+#: src/component/account/staff/config.js:32
+#: src/component/org/company/config.js:69
+#: src/component/org/company/detail.jsx:227
+#: src/component/org/company/detail.jsx:276
+msgid "Mobile"
+msgstr "Số di động"
+
+#: src/component/account/employee/crud/config.js:40
+msgid "Enabled"
+msgstr "Hiệu lực"
+
+#: src/component/account/director/profile/update/index.jsx:45
+msgid "Update director profile"
+msgstr "Cập nhật thông tin giám đốc"
+
+#: src/component/account/assistant/profile/update/index.jsx:45
+msgid "Update assistant profile"
+msgstr "Cập nhật thông tin trợ lý"
+
+#: src/component/account/admin/profile/update/index.jsx:45
+msgid "Update admin profile"
+msgstr "Cập nhật thông tin quản trị viên"
+
+#: src/component/org/employee/dialog/form.jsx:280
+msgid "Position section"
+msgstr "Khu vực chức danh"
+
+#: src/component/org/employee/dialog/form.jsx:290
+msgid "Personal information section"
+msgstr "Khu vực thông tin cá nhân"
+
+#: src/component/org/employee/dialog/form.jsx:351
+msgid "Change deparment section"
+msgstr "Khu vực thay đổi phòng ban"
+
+#: src/component/org/employee/dialog/form.jsx:365
+msgid "Contract section"
+msgstr "Khu vực hợp đồng"
+
+#: src/component/org/employee/dialog/form.jsx:386
+msgid "Insurance section"
+msgstr "Khu vực bảo hiểm"
+
+#: src/component/org/employee/dialog/form.jsx:404
+msgid "Labour section"
+msgstr "Khu vực lao động"
+
+#: src/component/org/employee/dialog/form.jsx:429
+msgid "Bank section"
+msgstr "Khu vực ngân hàng"
+
+#: src/component/org/position/config.js:25
+msgid "Title/Department code"
+msgstr "Mã VT/PB"
+
+#: src/component/org/position/config.js:26
+msgid "Title/Department name"
+msgstr "Tên VT/PB"
+
+#: src/component/org/position/config.js:27
+msgid "Parent department"
+msgstr "Trực thuộc PB"
+
+#: src/component/support/meeting/config.js:15
+msgid "meeting"
+msgstr "meeting"
+
+#: src/component/support/meeting/config.js:24
+msgid "Meeting title"
+msgstr "Tên meeting"
+
+#: src/component/support/meeting/config.js:25
+msgid "Start time"
+msgstr "Thời gian bắt đầu"
+
+#: src/component/org/employee/config.js:31
+msgid "Full name"
+msgstr "Họ và tên"
+
+#: src/component/org/company/config.js:39
+msgid "Code"
+msgstr "Mã"
+
+#: src/component/org/company/config.js:41
+msgid "English name"
+msgstr "Tên tiếng Anh"
+
+#: src/component/org/company/config.js:42
+msgid "Short name"
+msgstr "Tên ngắn"
+
+#: src/component/org/company/config.js:44
+msgid "Register address"
+msgstr "Địa chỉ đăng ký kinh doanh"
+
+#: src/component/org/company/config.js:45
+msgid "Other address"
+msgstr "Địa chỉ khác"
+
+#: src/component/org/company/config.js:47
+msgid "Fax number"
+msgstr "Số fax"
+
+#: src/component/org/company/config.js:48
+msgid "Establish date"
+msgstr "Ngày thành lập"
+
+#: src/component/org/company/config.js:49
+msgid "Tax code"
+msgstr "Mã số thuế"
+
+#: src/component/org/company/config.js:52
+msgid "Rep name"
+msgstr "Tên"
+
+#: src/component/org/company/config.js:53
+msgid "Rep position"
+msgstr "Vị trí"
+
+#: src/component/org/company/config.js:54
+msgid "Rep birth date"
+msgstr "Ngày sinh"
+
+#: src/component/org/company/config.js:55
+msgid "Rep ID card number"
+msgstr "Số CMT/CCCD"
+
+#: src/component/org/company/config.js:56
+msgid "Rep phone number"
+msgstr "Số điện thoại"
+
+#: src/component/org/company/config.js:57
+msgid "Rep email"
+msgstr "Email"
+
+#: src/component/org/company/config.js:64
+msgid "Activated at"
+msgstr "Ngày kích hoạt"
+
+#: src/component/org/company/detail.jsx:47
+msgid "Company info"
+msgstr "Thông tin công ty"
+
+#: src/component/org/company/detail.jsx:189
+msgid "Create director"
+msgstr "Tạo giám đốc"
+
+#: src/component/org/company/detail.jsx:200
+msgid "Director info"
+msgstr "Thông tin giám đốc"
+
+#: src/component/org/company/detail.jsx:238
+msgid "Create assistant"
+msgstr "Tạo phụ tá"
+
+#: src/component/org/company/detail.jsx:249
+msgid "Assistant info"
+msgstr "Thông tin phụ tá"
+
+#: src/component/org/company/table.jsx:34
+msgid "Activate"
+msgstr "Kích hoạt"
+
+#: src/component/org/company/table.jsx:48
+msgid "Assign"
+msgstr "Gán"
+
+#: src/component/org/company/table.jsx:140
+#, javascript-format
+msgid "Do you want to activate company: ${ name }?"
+msgstr "Bạn có muốn kích hoạt: ${ name }?"
+
+#: src/component/org/company/director_dialog/index.jsx:64
+msgid "Add new director"
+msgstr "Tạo mới giám đốc"
+
+#: src/component/org/company/dialog/form.jsx:155
+msgid "Company information"
+msgstr "Thông tin công ty"
+
+#: src/component/org/company/dialog/form.jsx:196
+msgid "Representative information"
+msgstr "Thông tin người đại diện"
+
+#: src/component/org/company/dialog/form.jsx:221
+msgid "Bank information"
+msgstr "Thông tin ngân hàng"
+
+#: src/component/org/company/assistant_dialog/index.jsx:64
+msgid "Add new assistant"
+msgstr "Tạo mới phụ tá"
+
+#: src/component/org/company/assign_dialog/index.jsx:54
+msgid "Update support staff"
+msgstr "Cập nhật nhân viên hỗ trợ"
+
+#: src/component/org/assigning_company/config.js:14
+msgid "AssigningCompany"
+msgstr "Gán công ty"
+
+#: src/component/org/assigning_company/config.js:25
+msgid "Assigner"
+msgstr "Người gán"
+
+#: src/component/document/tax_record/config.js:16
+msgid "Tax record"
+msgstr "Bảng tính thuế"
+
+#: src/component/common/layout/work/index.jsx:95
+#: src/component/document/salary_record/config.js:16
+msgid "Salary record"
+msgstr "Bảng tính lương"
+
+#: src/component/document/salary_record/index.jsx:24
+msgid "Salary"
+msgstr "Lương"
+
+#: src/component/document/salary_policy/config.js:16
+msgid "SalaryPolicy"
+msgstr "Chính sách lương"
+
+#: src/component/document/insurance_record/config.js:16
+msgid "Insurance record"
+msgstr "Bảng tính bảo hiểm"
+
+#: src/component/config/variable/config.js:14
+msgid "Variable"
+msgstr "Cấu hình"
+
+#: src/component/common/table/button.jsx:72
+msgid "View"
+msgstr "Xem"
+
+#: src/component/common/layout/main/index.jsx:148
+#: src/component/common/layout/work/index.jsx:88
+msgid "Salary policy"
+msgstr "Chính sách lương"
+
+#: src/component/common/layout/main/index.jsx:176
+#: src/component/common/layout/work/index.jsx:121
+msgid "Logout"
+msgstr "Thoát"
+
+#: src/component/common/layout/main/index.jsx:106
+#: src/component/common/layout/main/index.jsx:117
+msgid "ChatMessage"
+msgstr "Chat"
+
+#: src/component/document/insurance_record/config.js:31
+#: src/component/document/salary_policy/config.js:31
+#: src/component/document/salary_record/config.js:31
+#: src/component/document/tax_record/config.js:31
+msgid "Department"
+msgstr "Phòng ban"
+
+#: src/component/document/salary_policy/config.js:32
+msgid "Monthly position salary"
+msgstr "Lương vị trí / tháng"
+
+#: src/component/document/salary_policy/config.js:33
+msgid "Monthly base salary"
+msgstr "Mức lương cơ bản (đóng BHXH) / tháng"
+
+#: src/component/document/salary_policy/config.js:34
+#: src/component/document/salary_record/config.js:37
+msgid "Monthly performance bonus"
+msgstr "Thưởng hiệu suất tháng"
+
+#: src/component/document/salary_policy/config.js:35
+#: src/component/document/salary_record/config.js:38
+msgid "Quarterly performance bonus"
+msgstr "Thưởng hiệu suất quý"
+
+#: src/component/document/salary_policy/config.js:36
+#: src/component/document/salary_record/config.js:39
+msgid "Annual performance bonus"
+msgstr "Thưởng hiệu suất năm"
+
+#: src/component/document/salary_policy/config.js:37
+#: src/component/document/salary_record/config.js:40
+msgid "Sale bonus"
+msgstr "Thưởng doanh số"
+
+#: src/component/document/salary_policy/config.js:38
+#: src/component/document/salary_record/config.js:41
+msgid "Project bonus"
+msgstr "Thưởng dự án"
+
+#: src/component/document/salary_policy/config.js:39
+#: src/component/document/salary_record/config.js:43
+msgid "Meal allowance"
+msgstr "Phụ cấp ăn"
+
+#: src/component/document/salary_policy/config.js:40
+#: src/component/document/salary_record/config.js:44
+msgid "Phone allowance"
+msgstr "Phụ cấp điện thoại"
+
+#: src/component/document/salary_policy/config.js:41
+#: src/component/document/salary_record/config.js:45
+msgid "Vehicle allowance"
+msgstr "Phụ cấp xăng xe"
+
+#: src/component/document/salary_policy/config.js:42
+#: src/component/document/salary_record/config.js:46
+msgid "Housing allowance"
+msgstr "Phụ cấp nhà ở"
+
+#: src/component/document/salary_policy/config.js:43
+#: src/component/document/salary_record/config.js:47
+msgid "Attraction allowance"
+msgstr "Phụ cấp thu hút"
+
+#: src/component/document/salary_policy/config.js:44
+#: src/component/document/salary_record/config.js:48
+msgid "Seniority allowance"
+msgstr "Phụ cấp thâm niên"
+
+#: src/component/document/salary_policy/config.js:45
+#: src/component/document/salary_record/config.js:49
+msgid "Responsibility allowance"
+msgstr "Phụ cấp trách nhiệm"
+
+#: src/component/document/salary_policy/config.js:46
+#: src/component/document/salary_record/config.js:50
+msgid "Concurrently allowance"
+msgstr "Phụ cấp kiêm nhiệm"
+
+#: src/component/document/salary_policy/config.js:47
+#: src/component/document/salary_record/config.js:51
+msgid "Birth day allowance"
+msgstr "Phụ cấp sinh nhật"
+
+#: src/component/document/salary_policy/config.js:48
+#: src/component/document/salary_record/config.js:52
+msgid "Public holiday allowance"
+msgstr "Phụ cấp lễ tết"
+
+#: src/component/document/salary_policy/config.js:49
+#: src/component/document/salary_record/config.js:53
+msgid "Health insurance allowance"
+msgstr "Phụ cấp bảo hiểm sức khỏe"
+
+#: src/component/document/salary_policy/config.js:50
+#: src/component/document/salary_record/config.js:54
+msgid "Travel allowance"
+msgstr "Phụ cấp du lịch"
+
+#: src/component/document/salary_policy/config.js:51
+#: src/component/document/salary_record/config.js:56
+msgid "Gross income"
+msgstr "Tổng thu nhập"
+
+#: src/component/document/insurance_record/config.js:32
+#: src/component/document/salary_record/config.js:32
+#: src/component/document/tax_record/config.js:32
+msgid "Month"
+msgstr "Tháng"
+
+#: src/component/document/salary_record/config.js:33
+msgid "Working days"
+msgstr "Tổng công thực tế (NTT)"
+
+#: src/component/document/salary_record/config.js:34
+msgid "OT days"
+msgstr "Tổng thu Tổng công tăng ca"
+
+#: src/component/document/salary_record/config.js:35
+msgid "Base salary"
+msgstr "Tiền lương cơ bản tháng"
+
+#: src/component/document/salary_record/config.js:36
+msgid "OT salary"
+msgstr "Tiền lương tăng ca"
+
+#: src/component/document/salary_record/config.js:42
+msgid "Bonus notes"
+msgstr "Ghi chú thưởng"
+
+#: src/component/document/salary_record/config.js:55
+msgid "Allowance notes"
+msgstr "Ghi chú phụ cấp"
+
+#: src/component/document/salary_record/config.js:57
+msgid "Social insurance"
+msgstr "Trích nộp BHXH"
+
+#: src/component/document/salary_record/config.js:58
+msgid "Personal tax"
+msgstr "Thuế TNCN"
+
+#: src/component/document/salary_record/config.js:59
+msgid "NET income"
+msgstr "Tổng TN còn lại"
+
+#: src/component/document/salary_record/config.js:60
+msgid "Advance amount"
+msgstr "Tạm ứng/ đã chi trả cho NLĐ trong tháng"
+
+#: src/component/document/salary_record/config.js:61
+msgid "Revert amount"
+msgstr "NLĐ ứng trước tiền - cần hoàn ứng"
+
+#: src/component/document/salary_record/config.js:62
+msgid "Advance revert amount notes"
+msgstr "Ghi chú Hoàn ứng / tạm ứng / đã chi trả"
+
+#: src/component/document/salary_record/config.js:63
+msgid "Final settlement amount"
+msgstr "Quyết toán tiền trả NLĐ"
+
+#: src/component/document/salary_record/config.js:64
+msgid "Payment date"
+msgstr "Ngày chi lương"
+
+#: src/component/document/tax_record/config.js:33
+msgid "Monthly income"
+msgstr "Tổng thu nhập tháng"
+
+#: src/component/document/tax_record/config.js:34
+msgid "Pretax income"
+msgstr "Tổng thu nhập trước thuế"
+
+#: src/component/document/tax_record/config.js:35
+msgid "Personal allowance"
+msgstr "Giảm trừ bản thân"
+
+#: src/component/document/tax_record/config.js:36
+msgid "Family allowance members"
+msgstr "SL giảm trừ gia cảnh"
+
+#: src/component/document/tax_record/config.js:37
+msgid "Family allowance"
+msgstr "Giảm trừ gia cảnh"
+
+#: src/component/document/tax_record/config.js:38
+msgid "Deducted income"
+msgstr "Tổng thu nhập trước giảm trừ"
+
+#: src/component/document/tax_record/config.js:39
+msgid "Taxable income"
+msgstr "Thu nhập tính thuế"
+
+#: src/component/document/tax_record/config.js:40
+msgid "Tax rate"
+msgstr "Thuế suất"
+
+#: src/component/document/tax_record/config.js:41
+msgid "Personal income tax"
+msgstr "Thuế TNCN"
+
+#: src/component/document/insurance_record/config.js:33
+msgid "Applied salary"
+msgstr "Tổng lương đóng BHXH"
+
+#: src/component/document/insurance_record/config.js:34
+msgid "Applied benefit"
+msgstr "Tổng phụ cấp đóng BHXH"
+
+#: src/component/document/insurance_record/config.js:35
+msgid "Is social insurance target"
+msgstr "Đối tượng đóng BHXH"
+
+#: src/component/document/insurance_record/config.js:36
+#: src/component/document/insurance_record/config.js:40
+msgid "Retirement fund"
+msgstr "Quỹ hưu trí"
+
+#: src/component/document/insurance_record/config.js:37
+#: src/component/document/insurance_record/config.js:43
+msgid "Medical insurance fund"
+msgstr "Quỹ BHYT"
+
+#: src/component/document/insurance_record/config.js:38
+#: src/component/document/insurance_record/config.js:44
+msgid "Voluntary insurance fund"
+msgstr "Quỹ BHTN"
+
+#: src/component/document/insurance_record/config.js:41
+msgid "Sickness maternity fund"
+msgstr "Quỹ ốm đau / thai sản"
+
+#: src/component/document/insurance_record/config.js:42
+msgid "Accident occupational disease fund"
+msgstr "Quỹ TNLD / bệnh nghề nghiệp"
+
+#: src/component/document/insurance_record/config.js:46
+msgid "Union fee"
+msgstr "Phí công đoàn"
+
+#: src/component/document/insurance_record/config.js:39
+msgid "Employee paid amount"
+msgstr "Tổng NLD đóng"
+
+#: src/component/document/insurance_record/config.js:45
+msgid "Company paid amount"
+msgstr "Tổng DN đóng BHXH"
+
+#: src/component/document/insurance_record/config.js:47
+msgid "Company total paid amount"
+msgstr "Tổng DN đóng cho BHXH (bao gồm trích nộp cho NLD)"
+
+#: src/component/document/insurance_record/config.js:48
+msgid "Company total paid amount with union fee"
+msgstr "Tổng DN đóng (bao gồm phí công đoàn)"
+
+#: src/component/common/layout/work/index.jsx:59
+msgid "Back"
+msgstr "Quay lại"
+
+#: src/component/document/insurance_record/table.jsx:122
+#: src/component/document/salary_record/table.jsx:121
+msgid "Employee informaton"
+msgstr "Thông tin nhân viên"
+
+#: src/component/document/salary_record/table.jsx:163
+msgid "Working days & monthly salary"
+msgstr "Ngày công & lương tháng"
+
+#: src/component/document/salary_record/table.jsx:196
+msgid "Bonus"
+msgstr "Thưởng"
+
+#: src/component/document/salary_record/table.jsx:242
+msgid "Allowance"
+msgstr "Phụ cấp"
+
+#: src/component/document/salary_record/table.jsx:370
+msgid "Advance / revert amount"
+msgstr "Tạm ứng / hoàn ứng"
+
+#: src/component/document/insurance_record/dialog/form.jsx:185
+#: src/component/document/insurance_record/table.jsx:186
+msgid "Employee responsibility"
+msgstr "Trách nhiệm của NLD"
+
+#: src/component/document/insurance_record/dialog/form.jsx:198
+#: src/component/document/insurance_record/table.jsx:219
+msgid "Company responsibility"
+msgstr "Trách nhiệm của DN"

@@ -1,0 +1,30 @@
+FROM elixir:1.15-alpine
+
+RUN mix local.hex --force && mix archive.install --force hex phx_new 1.7.6 \
+ && apk add --update --virtual \
+ build-deps \
+ build-base \
+ gcc \
+ inotify-tools \
+ linux-headers \
+ gettext \
+ libffi-dev \
+ openssl-dev \
+ bash \
+ postgresql-dev \
+ postgresql-client \
+ && mix local.rebar --force
+
+RUN mkdir /code
+RUN mkdir /artifacts
+
+WORKDIR /code
+
+COPY mix.exs .
+COPY mix.lock .
+
+ENV MIX_BUILD_ROOT=/artifacts
+ENV MIX_BUILD_PATH=/artifacts/_build
+ENV MIX_DEPS_PATH=/artifacts/deps
+
+RUN mix do deps.get, deps.compile

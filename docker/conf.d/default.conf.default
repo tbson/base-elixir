@@ -1,0 +1,87 @@
+upstream phoenix {
+    server base_backend:4000 max_fails=5 fail_timeout=60s;
+}
+
+upstream vite {
+    server base_frontend:3000;
+}
+
+server {
+    listen 80;
+    server_name _;
+    root /resource/public;
+    index index.html;
+    location ~ /.well-known {
+        allow all;
+    }
+    location / {
+        return 301 https://$server_name$request_uri;
+    }
+}
+
+server {
+    listen 443 ssl http2;
+    server_name _;
+    root /resource/public;
+    index index.html;
+    charset utf-8;
+
+    # DEV env
+    ssl_certificate /resource/ssl/cer.crt;
+    ssl_certificate_key /resource/ssl/rsa.key; 
+
+    # PROD env
+    # ssl_certificate /resource/ssl/live/docmain.com/fullchain.pem;
+    # ssl_certificate_key /resource/ssl/live/domain.com/privkey.pem;
+
+    location /api/v1/ {
+        allow all;
+
+        if ($request_method = 'OPTIONS') {
+            add_header 'Access-Control-Allow-Origin' '*';
+            add_header 'Access-Control-Allow-Methods' 'OPTIONS,GET,POST,PUT,DELETE';
+            add_header 'Access-Control-Allow-Headers' 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Fingerprint,Authorization';
+            add_header 'Access-Control-Max-Age' 1728000;
+            add_header 'Content-Type' 'text/plain charset=UTF-8';
+            add_header 'Content-Length' 0;
+            return 204;
+        }
+
+        # Proxy Headers
+        proxy_http_version 1.1;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Cluster-Client-Ip $remote_addr;
+
+        # The Important Websocket Bits!
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+
+        proxy_pass http://phoenix;
+    }
+
+    location /public {
+        try_files $uri $uri/ /index.html;
+        rewrite ^/public(/.*)$ $1 break;
+        add_header Access-Control-Allow-Origin *;
+    }
+
+    # DEV env
+    location / {
+        add_header 'Access-Control-Allow-Methods' 'OPTIONS';
+        # proxy_pass http://docker.for.mac.localhost:3000;
+        proxy_pass http://vite;
+        proxy_redirect off;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        rewrite ^/(/.*)$ $1 break;
+    }
+
+    # PROD env
+    # location / {
+    #    root /resource/public/client;
+    #    try_files $uri $uri/ /index.html =404;
+    #    add_header Access-Control-Allow-Origin *;
+    # }
+}

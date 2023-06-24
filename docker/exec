@@ -1,0 +1,125 @@
+#!/bin/bash
+
+
+NAME="base"
+
+FIRST_ARG="$1"
+shift
+ARGS="$@"
+
+docker_down () {
+    COMPOSE_HTTP_TIMEOUT=512 docker compose down --volumes
+}
+
+docker_up () {
+    COMPOSE_HTTP_TIMEOUT=512 docker compose up -d
+}
+
+restart () {
+    docker_down
+    docker_up
+}
+
+help () {
+    echo "build             :  build docker instance"
+    echo "up                :  up docker instance"
+    echo "down              :  down docker inscance"
+    echo "restart           :  down then up docker instance"
+    echo "bserver           :  run phoenix dev server"
+    echo "btest             :  run test"
+    echo "fserver           :  run vite dev server"
+    echo "yarn              :  run yarn"
+    echo "poetry            :  run poetry command on backend service"
+    echo "manage.py         :  run manage.y"
+    echo "backend <args>        :  execute random command on backend service, ex: ./exec backend ls"
+    echo "backend-upgrade       :  upgrade backend dependencies",
+    echo "backend-post-upgrade  :  check outdated backend dependencies"
+}
+
+if [ "$FIRST_ARG" == "-h" ]; then
+    help
+    exit 0
+fi
+
+if [ "$FIRST_ARG" == "backend" ] || [ "$FIRST_ARG" == "db" ] || [ "$FIRST_ARG" == "timescaledb" ] || [ "$FIRST_ARG" == "frontend" ]; then
+    docker compose exec "$NAME"_"$FIRST_ARG" $ARGS
+elif [ "$FIRST_ARG" == "yarn" ]; then
+    docker compose exec "$NAME"_frontend yarn $ARGS
+elif [ "$FIRST_ARG" == "fserver" ]; then
+    docker compose exec "$NAME"_frontend yarn dev
+elif [ "$FIRST_ARG" == "fmakemessages" ]; then
+    docker compose exec "$NAME"_frontend node_modules/.bin/ttag update src/locale/vi.po src
+    docker compose exec "$NAME"_frontend node_modules/.bin/ttag update src/locale/en.po src
+elif [ "$FIRST_ARG" == "fdumpmessages" ]; then
+    docker compose exec "$NAME"_frontend node_modules/.bin/ttag po2json src/locale/vi.po > ../frontend/src/locale/vi.po.json
+    docker compose exec "$NAME"_frontend node_modules/.bin/ttag po2json src/locale/en.po > ../frontend/src/locale/en.po.json
+elif [ "$FIRST_ARG" == "ftest" ]; then
+    docker compose exec "$NAME"_frontend yarn test $ARGS
+elif [ "$FIRST_ARG" == "mix" ]; then
+    docker compose exec -e MIX_ENV=$ENV "$NAME"_backend mix $ARGS
+elif [ "$FIRST_ARG" == "iex" ]; then
+    docker compose exec -e MIX_ENV=$ENV "$NAME"_backend iex -S mix
+elif [ "$FIRST_ARG" == "mix_format" ]; then
+    mix format mix.exs "../backend/lib/**/*.{ex,exs}" "../backend/test/**/*.{ex,exs}"
+elif [ "$FIRST_ARG" == "mix_dialyzer" ]; then
+    rm -rf ./backend/.elixir_ls
+    docker compose exec -e MIX_ENV=$ENV "$NAME"_backend mix dialyzer
+elif [ "$FIRST_ARG" == "iex" ]; then
+    docker compose exec -e MIX_ENV=$ENV "$NAME"_backend iex -S mix
+elif [ "$FIRST_ARG" == "bserver" ]; then
+    docker compose exec "$NAME"_backend mix phx.server
+elif [ "$FIRST_ARG" == "clean-ls" ]; then
+    rm -rf ../backend/.elixir_ls
+elif [ "$FIRST_ARG" == "prepare_deploy" ]; then
+    sudo rm -rf ../backend/_build && mkdir ../backend/_build
+    restart
+    docker compose exec "$NAME"_backend mix deps.get --only prod
+    docker compose exec "$NAME"_backend mix compile --force
+elif [ "$FIRST_ARG" == "makemessages" ]; then
+    docker compose exec "$NAME"_backend mix gettext.extract --merge
+elif [ "$FIRST_ARG" == "up" ]; then
+    docker_up
+elif [ "$FIRST_ARG" == "down" ]; then
+    docker_down
+elif [ "$FIRST_ARG" == "restart" ]; then
+    # docker network create shared_network
+    rm -rf ./backend/.elixir_ls
+    restart
+elif [ "$FIRST_ARG" == "restart_db" ]; then
+    # docker network create shared_network
+    docker restart "$NAME"_db
+elif [ "$FIRST_ARG" == "build" ]; then
+    rm -rf ../backend/deps ../backend/_build
+    mkdir ../backend/deps
+    docker compose build --no-cache
+    docker_down
+    docker_up
+    docker compose exec "$NAME"_backend mix deps.get
+    docker compose exec "$NAME"_backend mix deps.compile --force
+elif [ "$FIRST_ARG" == "pg_dump" ]; then
+    docker compose exec "$NAME"_db pg_dump $ARGS
+    # ./exec pg_dump -U username db_name > db.sql
+elif [ "$FIRST_ARG" == "clean_db" ]; then
+    rm -rf dbdata && mkdir dbdata
+    sleep 1
+    docker restart base_pg
+    docker restart base_timescale
+    sleep 5
+    docker compose exec "$NAME"_backend mix ecto.migrate
+    docker compose exec "$NAME"_backend mix cmd.sync_all_pems
+    docker compose exec "$NAME"_backend mix cmd.account_seeding
+elif [ "$FIRST_ARG" == "btest" ]; then
+    if [[ $1 ]]; then
+        docker compose exec -e MIX_ENV=test -e DOC=1 "$NAME"_backend mix test $1
+    else
+        docker compose exec -e MIX_ENV=test -e DOC=1 "$NAME"_backend mix test
+    fi
+elif [ "$FIRST_ARG" == "rabbitmqadmin" ]; then
+    docker compose exec "$NAME"_broker rabbitmqadmin $ARGS
+elif [ "$FIRST_ARG" == "rabbitmqctl" ]; then
+    docker compose exec "$NAME"_broker rabbitmqctl $ARGS
+else
+    echo "Invalid argument, please use following arguments:"
+    echo "-------------------------------------------------"
+    help
+fi
